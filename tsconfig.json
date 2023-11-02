@@ -2,7 +2,7 @@
   "extends": "ts-config-single-spa",
   "files": ["src/roffyMonsta-portfolio-root-config.ts"],
   "compilerOptions": {
-    "declarationDir": "dist"
+    "declarationDir": "build"
   },
   "include": ["src/**/*"],
   "exclude": ["src/**/*.test*"]

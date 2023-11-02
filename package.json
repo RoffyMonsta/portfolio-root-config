@@ -10,7 +10,7 @@
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
     "build:types": "tsc",
-    "predeploy": "webpack --mode=production",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
@@ -49,5 +49,6 @@
     "single-spa": "^5.9.3",
     "single-spa-layout": "^1.6.0"
   },
+  "homepage": "https://roffymonsta.github.io/portfolio-root-config",
   "types": "dist/roffyMonsta-portfolio-root-config.d.ts"
 }
