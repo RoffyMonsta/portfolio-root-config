@@ -2,7 +2,7 @@ const { merge } = require("webpack-merge");
 const path = require("path");
 const singleSpaDefaults = require("webpack-config-single-spa-ts");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = (webpackConfigEnv, argv) => {
   const orgName = "roffyMonsta";
   const defaultConfig = singleSpaDefaults({
@@ -27,6 +27,13 @@ module.exports = (webpackConfigEnv, argv) => {
           isLocal: webpackConfigEnv && webpackConfigEnv.isLocal,
           orgName,
         },
+      }),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'public',
+          },
+        ],
       }),
     ],
   });
