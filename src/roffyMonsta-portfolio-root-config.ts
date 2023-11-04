@@ -5,10 +5,9 @@ import {
   constructLayoutEngine,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
-import { loadFonts } from "./assets-helpers/load-fonts";
-import "./assets-helpers/normalize-css.css";
+import loadInitialConfig from "./assets-helpers/initialConfig";
 
-loadFonts();
+loadInitialConfig();
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({
