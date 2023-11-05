@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js"
+    "@roffymonsta/landing-page": "https://roffymonsta.github.io/portfolio-landing-page/main.js"
   }
 }
