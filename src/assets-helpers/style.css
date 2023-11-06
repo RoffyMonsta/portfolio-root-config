@@ -2,3 +2,20 @@
   --primary-color: #1a1820;
   --secondary-color: #ece7c1;
 }
+::-moz-selection {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+::selection {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
+}
