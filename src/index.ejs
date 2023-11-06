@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Anton Lomovatskyi Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/portfolio-root-config/assets/favicon.ico">
   <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
-
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: localhost:* data: fonts.gstatic.com; script-src 'unsafe-inline' 'unsafe-eval' https: localhost:* ; connect-src https: localhost:* ws://localhost:*; style-src 'unsafe-inline' https:; object-src 'none';">
   <meta name="importmap-type" content="systemjs-importmap" />
+
   <script type="systemjs-importmap">
     {
       "imports": {
         "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
-        "@roffyMonsta/portfolio-root-config": "/portfolio-root-config/roffyMonsta-portfolio-root-config.js"
+        "@roffyMonsta/portfolio-root-config": "/roffyMonsta-portfolio-root-config.js"
       }
     }
   </script>
+  <script type="systemjs-importmap" src="/import-map.json"></script>
+
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
-  <!-- /portfolio-root-config -->
+  
   <!-- localStorage.setItem('devtools', true); -->
-  <script type="systemjs-importmap" src="/portfolio-root-config/import-map.json"></script>
+
   <!-- This is required for Angular Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis-network.min.css">
