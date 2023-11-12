@@ -1,23 +1,23 @@
 :root {
   --primary-color: #1a1820;
   --primary-matching-color-1: #313744;
-  --primary-matching-color-2: #455A6A;
-  --primary-matching-color-3: #59818D;
+  --primary-matching-color-2: #455a6a;
+  --primary-matching-color-3: #59818d;
   --secondary-color: #ece7c1;
-  --secondary-matching-color-1: #B6C9A9;
-  --secondary-matching-color-2: #85AA97;
-  --secondary-matching-color-3: #98B58B;
+  --secondary-matching-color-1: #b6c9a9;
+  --secondary-matching-color-2: #85aa97;
+  --secondary-matching-color-3: #98b58b;
   --font-family: Lady Ice;
   --title-font-size: 80px;
   --big-font-size: 60px;
   --regular-font-size: 36px;
   --small-font-size: 24px;
-    @media screen and (max-width: 767px) {
-      --title-font-size: 80px;
-      --big-font-size: 60px;
-      --regular-font-size: 36px;
-      --small-font-size: 24px;
-    }
+  @media screen and (max-width: 767px) {
+    --title-font-size: 80px;
+    --big-font-size: 60px;
+    --regular-font-size: 36px;
+    --small-font-size: 24px;
+  }
 }
 ::-moz-selection {
   color: var(--secondary-color);
@@ -37,6 +37,7 @@ p {
   margin: 0;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
 }
